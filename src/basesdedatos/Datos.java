@@ -17,7 +17,7 @@ public class Datos {
     public Connection conectar() throws ClassNotFoundException{
         Class.forName("com.mysql.jdbc.Driver");
         try {
-            conexion=(Connection) DriverManager.getConnection("jdbc:mysql://localhost/agomezcastro", "agomezcastro", "agomezcastro");
+            conexion=(Connection) DriverManager.getConnection("jdbc:mysql://10.0.0.254/agomezcastro/agomezcastro", "agomezcastro", "agomezcastro");
             JOptionPane.showMessageDialog(null, "Conectado");
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "Error de conexion");
